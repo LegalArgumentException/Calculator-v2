@@ -78,7 +78,7 @@ func pointAddition(pointOne: (x: Int, y: Int), pointTwo: (x: Int, y: Int)) -> (x
 
 // Adds two points together given two tuples made of the form (Int, Int) and returns the resultingtuple of the same form
 func pointSubtraction(pointOne: (x: Int, y: Int), pointTwo: (x: Int, y: Int)) -> (x: Int, y: Int) {
-    return (pointOne.x - pointTwo.x, pointOne.y + pointTwo.y);
+    return (pointOne.x - pointTwo.x, pointOne.y - pointTwo.y);
 }
 
 // Adds two given Dictionaries with the keys being String and the values being Doubles

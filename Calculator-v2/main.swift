@@ -18,25 +18,31 @@ import Foundation
 // False if they want to terminate the program
 
 // Testing for the "Calculator and More" Assignment, to prove the functions work
-var tupleOne = (x: 2, y: 0);
-var tupleTwo = (x: 2, y: -4);
-var tupleSolution = pointAddition(tupleOne, pointTwo: tupleTwo);
-print(tupleSolution);
+let tupleOne = (x: 2, y: 0);
+print("Tuple One : \(tupleOne)");
+let tupleTwo = (x: 2, y: -4);
+print("Tuple Two : \(tupleTwo)")
+let tupleAdd = pointAddition(tupleOne, pointTwo: tupleTwo);
+let tupleSub = pointSubtraction(tupleOne, pointTwo: tupleTwo);
+print("Tuples Added : \(tupleAdd)");
+print("Tuples Subtracted : \(tupleSub)");
 
-var dictOne = [
+let dictOne = [
     "x": 5.0,
     "y": 5.0,
 ];
+print("Dictionary One : \(dictOne)");
 
-var dictTwo = [
+let dictTwo = [
     "x": 2.0,
 ];
+print("Dictionary Two : \(dictTwo)");
 
-var dictAdd = dictAddition(dictOne, dictTwo: dictTwo);
-print(dictAdd);
+let dictAdd = dictAddition(dictOne, dictTwo: dictTwo);
+print("Dictionaries Added : \(dictAdd)");
 
-var dictSub = dictSubtraction(dictOne, dictTwo: dictTwo);
-print(dictSub);
+let dictSub = dictSubtraction(dictOne, dictTwo: dictTwo);
+print("Dictionaries Subtracted : \(dictSub)");
 
 // Contains logic to ask the user to make a computation and prints them their correct answers
 // IMPLEMENTS CHANGES FROM CALCULATOR AND MORE ASSIGNMENT
